@@ -117,6 +117,7 @@ let product:IProduct = {} as IProduct // типа задать как пусто
 //дженейрики
 
 
+
 const getArray = <T extends any>(items: T[]):T[] =>[...items];
 
 // в tsx обязательно extends any после начала дженейрика
