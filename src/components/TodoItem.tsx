@@ -8,7 +8,8 @@ interface TodoItemProps {
 const TodoItem: FC<TodoItemProps> = ({todo}) => {
 	return (
 		<div>
-			<input type="checkbox" checked={todo.completed} />
+			{/* устанавливаем здесь реадОнли чтобы реакт не ругался что у нас неизменяемый чекбокс и нету onChange */}
+			<input readOnly type="checkbox" checked={todo.completed} />
 			{todo.id}. {todo.title}
 		</div>
 	);

@@ -5,7 +5,7 @@ import { IUser } from '../types/types';
 import { useParams, useNavigate } from 'react-router-dom';
 
 interface UserItemPageParams {
-	[index: string]: string; // какая-то странная хуйня, что-то обновилось в 6 роутере и надо писать именно так
+	[index: string]: string; // какая-то странная штука, что-то обновилось в 6 роутере и надо писать именно так
 }
 
 const UserItemPage: FC = () => {
